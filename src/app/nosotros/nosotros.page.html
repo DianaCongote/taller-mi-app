@@ -13,6 +13,31 @@
   </ion-button>
 
   <ion-button routerLink="/contacto">
-    contacto
+    Saludo
   </ion-button>
+
+  <ion-item>
+    <ion-label position="floating">Numero 1:</ion-label>
+    <ion-input [(ngModel)]="numero1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Operacion:</ion-label>
+    <ion-input [(ngModel)]="operacion"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Numero 2:</ion-label>
+    <ion-input [(ngModel)]="numero2"></ion-input>
+  </ion-item>
+
+  <ion-button color="success" (click)="haceroperacion()">
+    Operar
+  </ion-button><br>
+  {{ this.mensaje }}
+  {{ this.numero1 }}
+  y
+  {{ this.numero2 }}
+  es
+  {{ this.resultado }}
 </ion-content>
