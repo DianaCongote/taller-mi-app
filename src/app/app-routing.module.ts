@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'nosotros',
     loadChildren: () => import('./nosotros/nosotros.module').then( m => m.NosotrosPageModule)
   },
+  {
+    path: 'parcial',
+    loadChildren: () => import('./parcial/parcial.module').then( m => m.ParcialPageModule)
+  },
+  {
+    path: 'otraparcial',
+    loadChildren: () => import('./otraparcial/otraparcial.module').then( m => m.OtraparcialPageModule)
+  },
 ];
 
 @NgModule({
